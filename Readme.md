@@ -1,90 +1,94 @@
-# Stella - AI-agent for testing 
+Stella – AI Agent for Testing
 
-**Description:**
-Stella is an open-source platform that provides AI-agents with distinct personalities to test and review your app . These virtual testers deliver instant, unbiased feedback on your digital products, making beta testing accessible, efficient, and scalable.
+Description
+
+Stella is an open-source platform that provides AI agents with unique personalities to test and review your app. These virtual testers deliver immediate, unbiased feedback on your digital products, making beta testing more accessible, efficient, and scalable.
+
 Features
+
+24/7 Testing Availability: Receive instant feedback whenever you need it.
+Diverse Persona Library: Test your app with a variety of virtual testers offering unique perspectives.
+Detailed Analytics: Gain comprehensive insights into UX/UI and user behavior.
+Automated Reporting: Generate structured and actionable feedback reports.
+API Integration: Seamlessly integrate Stella into your development workflow.
+Workflow
+
 
 **Flow:**
 [Workflow]("images/flow.png")
 
 <img src="images/flow.png" alt="Image description" width="999">
 
+Installation
 
-24/7 Testing Availability: Get instant feedback whenever you need it
-Diverse Persona Library: Access a range of virtual testers with unique perspectives
-Detailed Analytics: Receive comprehensive UX/UI insights and user behavior analysis
-Automated Reporting: Generate structured, actionable feedback reports
-API Integration: Seamlessly integrate with your development workflow
+Follow these steps to install Stella:
 
-**Installation:**
-Copy# Create and activate a virtual environment
+Create and activate a virtual environment:
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
-# Clone the repository
+Clone the repository:
 git clone https://github.com/seifbenayed/stella.git
 cd stella
-
-# Install required packages
+Install the required packages:
 pip install -r requirements.txt
 
-**Configuration:**
-Update the .env file in the project root with the following required variables:
+Configuration
 
-# Selected persona ID from MongoDB
-persona=your_persona_object_id ( check the list bellow)
+Update the .env file located at the root of the project with the following variables:
 
-# AI model key (supports 'gpt-4o', 'o1', 'o1-mini' or 'sonnet-3-5')
-Add your key for your AI model
-
-# AI model identifier (supports 'gpt-4o', 'o1', 'o1-mini' or 'sonnet-3-5')
+Persona ID: Choose the persona ID from MongoDB:
+persona=your_persona_object_id  # See the list below
+AI Model Key: Add your API key for the AI model (supports gpt-4o, o1, o1-mini, or sonnet-3-5).
+AI Model Identifier: Specify your chosen model:
 llm_id=your_chosen_model
+Preconfigured Personas
+Stella comes with seven preconfigured personas, each representing a different user segment:
 
-
-Stella comes with seven pre-configured personas, each representing different user segments:
-
-Damien: Status-driven CEO focused on premium experiences id = 
-Vincent: Growth-focused entrepreneur prioritizing ROI
-Sarah: Millennial financial planner emphasizing mobile usage
-Selma: Eco-conscious future parent valuing sustainability
-Laure: Beauty-tech enthusiast seeking trends
-Amir: Intellectual entrepreneur with analytical approach
-Lina: GenZ digital native prioritizing social proof
-
-
-
+Damien: A status-driven CEO focused on premium experiences. ( ID=672943da00e68f541d8a4e46)
+Vincent: A growth-oriented entrepreneur prioritizing ROI. ID=6729448500e68f541d8a4e49
+Sarah: A millennial financial planner emphasizing mobile usage. ID=6729448500e68f541d8a4e4a
+Selma: An eco-conscious future parent who values sustainability. ID=6729452e00e68f541d8a4e4b
+Laure: A beauty-tech enthusiast on the lookout for trends. ID=6729452e00e68f541d8a4e4c
+Amir: An analytical, intellectually driven entrepreneur. ID = 6729464e00e68f541d8a4e4d
+Lina: A Gen Z digital native who values social proof. ID=6729464e00e68f541d8a4e4e
 Contributing
-We welcome contributions! Please see our Contributing Guide for details.
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+We welcome contributions! To get started:
+
+Fork the project.
+Create a feature branch:
+git checkout -b feature/AmazingFeature
+Commit your changes:
+git commit -m "Add AmazingFeature"
+Push your branch:
+git push origin feature/AmazingFeature
+Open a Pull Request.
+For more details, please refer to our Contributing Guide.
 
 Requirements
 
 Python >= 3.9
 MongoDB >= 4.4
+Acknowledgments
 
-**Acknowledgments:**
 Stella leverages several key technologies:
 
 LangChain for AI agent creation
 Playwright for web interaction
 MongoDB for persona management
 Various AI models for intelligent analysis
-
 Support
 
 📝 Documentation
 🐛 Issue Tracker
 💬 Community Forum
+License
 
-**License:**
-This project is licensed under the APACHE 2.0 - see the LICENSE file for details.
+This project is licensed under the Apache 2.0 License – see the LICENSE file for details.
 
-**Acknowledgments:**
-Special thanks to all contributors who have helped shape Stella's virtual testing capabilities.
+Special Thanks
+
+A heartfelt thank you to all the contributors who have helped shape Stella's virtual testing capabilities.
+
 
 
