@@ -1,7 +1,7 @@
 # Stella - AI-agent for beta tester 
 
 **Description:**
-Stella is an open-source platform that provides AI-agents with distinct personalities to . These virtual testers deliver instant, unbiased feedback on your digital products, making beta testing accessible, efficient, and scalable.
+Stella is an open-source platform that provides AI-agents with distinct personalities to test and review your app . These virtual testers deliver instant, unbiased feedback on your digital products, making beta testing accessible, efficient, and scalable.
 Features
 
 **Flow:**
@@ -67,7 +67,13 @@ Requirements
 Python >= 3.9
 MongoDB >= 4.4
 
+**Acknowledgments:**
+Stella leverages several key technologies:
 
+LangChain for AI agent creation
+Playwright for web interaction
+MongoDB for persona management
+Various AI models for intelligent analysis
 
 Support
 
