@@ -1,4 +1,4 @@
-# Stella - AI-agent for beta tester 
+# Stella - AI-agent for testing 
 
 **Description:**
 Stella is an open-source platform that provides AI-agents with distinct personalities to test and review your app . These virtual testers deliver instant, unbiased feedback on your digital products, making beta testing accessible, efficient, and scalable.
