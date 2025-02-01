@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  stella-api:
+    build: .
+    image: stella:fastapi
+    container_name: stella-api
+    restart: unless-stopped
+    environment:
+      - azure_endpoint=https://ai-stella322096059323.openai.azure.com/
+      - api_key=21LxtyD8QpxQ0VOOhkQhmykwlh3hTOWI6wCTmNeFfdMZOvoOQRiRJQQJ99AKACYeBjFXJ3w3AAAAACOGy4lj
+      - azure_deployment=gpt-4o-stella
+      - api_version=2024-08-01-preview
+      - MONGODB_URI=mongodb://Mtalha:Test123@54.87.227.193:27017/
+      - DB_NAME=hedi_db
+    ports:
+      - "8080"
+    volumes:
+      - ./tmp_folder:/app/tmp_folder
